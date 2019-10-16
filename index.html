@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Уничтожение тараканов</title>
+    <script src="https://kit.fontawesome.com/3bbde3e135.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+            <script>
+
+                    function statusChangeCallback(response) {  // Called with the results from FB.getLoginStatus().
+                      console.log('statusChangeCallback');
+                      console.log(response);                   // The current login status of the person.
+                      if (response.status === 'connected') {   // Logged into your webpage and Facebook.
+                        testAPI();  
+                      } else {                                 // Not logged into your webpage or we are unable to tell.
+                        document.getElementById('status').innerHTML = 'Войдите чтобы комментировать';
+                      }
+                    }
+                  
+                  
+                    function checkLoginState() {               // Called when a person is finished with the Login Button.
+                      FB.getLoginStatus(function(response) {   // See the onlogin handler
+                        statusChangeCallback(response);
+                      });
+                    }
+                  
+                  
+                    window.fbAsyncInit = function() {
+                      FB.init({
+                        appId      : '513129222581852',
+                        cookie     : true,                     // Enable cookies to allow the server to access the session.
+                        xfbml      : true,                     // Parse social plugins on this webpage.
+                        version    : 'v4.0'           // Use this Graph API version for this call.
+                      });
+                  
+                  
+                      FB.getLoginStatus(function(response) {   // Called after the JS SDK has been initialized.
+                        statusChangeCallback(response);        // Returns the login status.
+                      });
+                    };
+                  
+                    
+                    (function(d, s, id) {                      // Load the SDK asynchronously
+                      var js, fjs = d.getElementsByTagName(s)[0];
+                      if (d.getElementById(id)) return;
+                      js = d.createElement(s); js.id = id;
+                      js.src = "https://connect.facebook.net/en_US/sdk.js";
+                      fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));
+                  
+                   
+                    function testAPI() {                      // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
+                      console.log('Welcome!  Fetching your information.... ');
+                      FB.api('/me', function(response) {
+                        console.log('Successful login for: ' + response.name);
+                        document.getElementById('status').innerHTML =
+                          'Спасибо, ' + response.name + '!';
+                      });
+                    }
+                  
+            </script>
+                  
+                  
+                    
+
+
+    <div class="container">
+        <header>
+
+            <div class="logo">
+                <img src="img/tarakan-02.svg" alt="Уничтожение тараканов">
+            </div>
+
+            <div class="center_header">
+                <nav>
+                    <ul class="main_menu">
+                        <li><a href="#">ГЛАВНАЯ</a></li>
+                        <li><a href="#">УСЛУГИ</a></li>
+                        <li><a href="#">ЦЕНЫ</a></li>
+                        <li><a href="#">КОНТАКТЫ</a></li>
+                    </ul>
+                </nav>
+
+                <div class="title">
+                    <h1><span>ДЕЗИНФЕКТ</span><img src="img/tarakan-02.svg" alt="Уничтожение тараканов"><span>Р</span> </h1>
+                </div>
+
+                
+
+            </div>
+
+            <div class="contacts">
+                <div class="messenger_item">
+                    <div class="logo_messenger">
+                        <i class="fas fa-phone-square-alt fa-2x"></i>
+                    </div>
+                    <div class="text_messenger">+38(063) 630-35-30</div>
+                </div>
+                <div class="messenger_item">
+                    <div class="logo_messenger">
+                        <img src="img/messengers/viber_PNG26.png" alt="">
+                    </div>
+                    <div class="text_messenger">+38(063) 630-35-30</div>
+                </div>
+                <div class="messenger_item">
+                    <div class="logo_messenger">
+                        <img src="img/messengers/WHATS-APP.png" alt="">
+                    </div>
+                    <div class="text_messenger">+38(063) 630-35-30</div>
+                </div>
+                <div class="messenger_item">
+                    <div class="logo_messenger">
+                        <img src="img/messengers/TELEGRAM.png" alt="">
+                    </div>
+                    <div class="text_messenger">+38(063) 630-35-30</div>
+                </div>
+                <div class="messenger_item">
+                    <div class="logo_messenger">
+                        <img src="img/messengers/SKYPE.png" alt="">
+                    </div>
+                    <div class="text_messenger">+38(063) 630-35-30</div>
+                </div>
+            
+            </div>
+
+        </header>
+
+        <div class="content">
+
+            <div class="replies">
+                <h2>ОТЗЫВЫ</h2>
+                <div class="replies_item">
+                    
+                        <div class="avatar">
+                            <img src="https://scontent.fdnk2-1.fna.fbcdn.net/v/t1.0-9/70644210_2408415745902414_8259450160086515712_n.jpg?_nc_cat=104&_nc_oc=AQmoKCxWrobiTYqyecxvS44v-wA7c9exXCvlnW-9ZnDpXi7dKRwKVqD6nL_gaE8lWbk&_nc_ht=scontent.fdnk2-1.fna&oh=9cfb0911935139d243d510d28025f3d9&oe=5E2A5C33" alt="">
+                        </div>
+                        
+                        <div class="replies_info">
+                            <div class="replies_name"><a href="https://www.facebook.com/yuri.przhepjurko" target="blank">Юрий Пржепюрко</a></div>
+                            <div class="replies_text">Отличный сервис. Всем рекомендую</div>
+                        </div>
+                </div>
+                <div class="replies_item">
+                    
+                        <div class="avatar">
+                            <img src="img/fb_logo/prjepurko.jpg" alt="">
+                        </div>
+                        
+                        <div class="replies_info">
+                            <div class="replies_name"><a href="https://www.facebook.com/yuri.przhepjurko" target="blank">Юрий Пржепюрко</a></div>
+                            <div class="replies_text">Отличный сервис. Всем рекомендую</div>
+                        </div>
+                </div>
+                <div class="replies_item">
+                    
+                        <div class="avatar">
+                            <img src="img/fb_logo/prjepurko.jpg" alt="">
+                        </div>
+                        
+                        <div class="replies_info">
+                            <div class="replies_name"><a href="https://www.facebook.com/yuri.przhepjurko" target="blank">Юрий Пржепюрко</a></div>
+                            <div class="replies_text">Отличный сервис. Всем рекомендую</div>
+                        </div>
+                </div>
+                <div class="replies_item">
+                    
+                        <div class="avatar">
+                            <img src="img/fb_logo/prjepurko.jpg" alt="">
+                        </div>
+                        
+                        <div class="replies_info">
+                            <div class="replies_name"><a href="https://www.facebook.com/yuri.przhepjurko" target="blank">Юрий Пржепюрко</a></div>
+                            <div class="replies_text">Отличный сервис. Всем рекомендую</div>
+                        </div>
+                </div>
+
+                <!-- The JS SDK Login Button  -->
+                <div class="comment_div">
+                    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+                    </fb:login-button>
+                    
+                    <div id="status">
+                    </div> 
+                </div> 
+
+                </div>
+             
+            <div class="content_center">
+                <div class="banners">
+                        <div class="banner">
+                            <div class="banner_item">
+                                <div class="title_banner_item">
+                                    <div class="">Безопасно!</div>
+                                </div>
+                                <div class="banner_text_item">
+                                    Использование профессиональных  
+                                    препаратов концерна BASF с 
+                                    сертификацией 
+                                    для стран евросоюза 
+                                    безопасно для питомцев
+                                    и растений. 
+                                    Животные и дети не страдают!
+                                </div>
+                             </div>
+                             <div class="banner_item">
+                                <div class="title_banner_item">Доступность</div>
+                                <div class="banner_text_item">
+                                        Специальные цены 
+                                        для участников
+                                        АТО и пенсионеров.
+                                        Работа с физическими 
+                                        и юридическими 
+                                        лицами( выезд в кафе
+                                        и ресторана возможен 
+                                        после 22*00)
+                                </div>
+                            </div>
+                            <div class="banner_item">                                    <div class="title_banner_item">Качество</div>
+                                <div class="banner_text_item">
+                                        Наше качество это
+                                        сеть McDonald's Днепр,
+                                        Гданськ, Варшава.
+                                        Даем гарантию на выполненную нами 
+                                        работу до 5 лет
+                                </div>
+                            </div>
+                            <div class="banner_item">                                    <div class="title_banner_item">Гарантии</div>
+                                <div class="banner_text_item">
+                                        Персонал с медицинским
+                                        образованием и 
+                                        стажем не менее
+                                        10 лет
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                <div class="content_info">
+                    <article>    
+                        <p> Наша служба по уничтожению тараканов работает на 
+                        территории г. Днепр и Днепропетровской области, а 
+                        также в г. Гданськ (Польша) уже более 10 лет.</p>
+                        
+                        <p> Мы обслуживаем любые помещения.
+                        Уничтожаем тараканов в квартире, офисе, на складе и т. п.</p>
+                        
+                        <p> С каждым коиентом возможно заключение договора.</p>
+
+                        <p>Пожалуйста ознакомьтесь с отзывами наших клиентов.</p>
+                    </article>
+                </div>
+            </div>
+
+            <div class="rightColumn">
+                <div class="recall">
+                    <h2>Заказать обратный звонок</h2>
+                    <form action="/page.php" method="get" class="">
+                        <input type="text" name="fname" placeholder="Введите номер телефона">
+                        <div class="form-submit-button-wrap"> 
+                            <button class="form-submit-button" id="button-form-1" type="submit" >Отправить</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="actions">
+                        <h2>АКЦИЯ</h2>
+                        <div class="">
+                            ПОВТОРНАЯ ОБРАБОТКА 50%
+                        </div>
+                    </div>
+            </div>
+         
+        </div>
+
+        <div class="services"> <h1>УСЛУГИ ПО УНИЧТОЖЕНИЮ</h1></div>
+
+        <div class="services_grid">
+            <div class="services_item">
+                <h2 class="services_title">ТАРАКАНОВ</h2>
+                <img class="img_service" src="img/insects/tarakan.png" alt="">
+            </div>
+            <div class="services_item">
+                    <h2 class="services_title">КЛОПОВ</h2>
+                    <img class="img_service" src="img/insects/klop.png" alt="">
+            </div>
+            <div class="services_item">
+                    <h2 class="services_title">БЛОХ</h2>
+                    <img class="img_service" src="img/insects/bloha.png" alt="">
+            </div>
+            <div class="services_item">
+                    <h2 class="services_title">КЛЕЩЕЙ</h2>
+                    <img class="img_service" src="img/insects/klesch.png" alt="">
+            </div>
+            <div class="services_item">
+                    <h2 class="services_title">МОЛИ</h2>
+                    <img class="img_service" src="img/insects/mol.png" alt="">
+            </div>
+            <div class="services_item">
+                    <h2 class="services_title">КОМАРОВ</h2>
+                    <img class="img_service" src="img/insects/komar.png" alt="">
+            </div>
+        </div>
+
+        <div class="prices">
+            <div class="prices_title">
+                <h1>ЦЕНЫ</h1>
+            </div>
+
+            <div class="prices_info">
+                <h2>Квартиры</h2>
+
+                <ul>
+                    <li>1-комнатная: 450 грн.</li>
+                    <li>2-комнатная: 540 грн.</li>
+                    <li>3-комнатная: 630 грн.</li>
+                    <li>4-комнатная и больше: по договоренности</li>
+                </ul>
+                    <h2>Офисы</h2>
+                <ul>
+                    <li>50 м2: 600 грн.</li>
+                    <li>100м2: 1000 грн.</li>
+                    <li>Более 100м2: по договоренности</li>
+                </ul>
+            </div>    
+        </div>
+
+        <div class="contacts_body">
+            <div class="contacts_title"><h1>КОНТАКТЫ</h1></div>
+            <p>Связаться с нами вы можете любым удобным способом</p>
+            <div class="contacts">
+                <div class="messenger_item">
+                    <div class="logo_messenger">
+                        <i class="fas fa-phone-square-alt fa-2x"></i>
+                    </div>
+                    <div class="text_messenger">+38(063) 630-35-30</div>
+                </div>
+                <div class="messenger_item">
+                    <div class="logo_messenger">
+                        <img src="img/messengers/viber_PNG26.png" alt="">
+                    </div>
+                    <div class="text_messenger">+38(063) 630-35-30</div>
+                </div>
+                <div class="messenger_item">
+                    <div class="logo_messenger">
+                        <img src="img/messengers/WHATS-APP.png" alt="">
+                    </div>
+                    <div class="text_messenger">+38(063) 630-35-30</div>
+                </div>
+                <div class="messenger_item">
+                    <div class="logo_messenger">
+                        <img src="img/messengers/TELEGRAM.png" alt="">
+                    </div>
+                    <div class="text_messenger">+38(063) 630-35-30</div>
+                </div>
+                <div class="messenger_item">
+                    <div class="logo_messenger">
+                        <img src="img/messengers/SKYPE.png" alt="">
+                    </div>
+                    <div class="text_messenger">+38(063) 630-35-30</div>
+                </div>
+            
+            </div>
+            <div class="recall_bottom">
+                <form action="">
+                    <input type="text" placeholder="Введите свой номер">
+                    <button>ОТПРАВИТЬ</button>
+                </form>
+            </div>
+        </div>
+
+    <script src="js/main.min.js"></script>
+
+    </div>
+                
+        
+
+    
+    
+</body>
+</html>

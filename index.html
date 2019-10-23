@@ -72,17 +72,17 @@
     <div class="container">
         <header>
 
-            <div class="logo">
+            <div id="main" class="logo">
                 <img src="img/tarakan-02.svg" alt="Уничтожение тараканов">
             </div>
 
             <div class="center_header">
                 <nav>
                     <ul class="main_menu">
-                        <li><a href="#">ГЛАВНАЯ</a></li>
-                        <li><a href="#">УСЛУГИ</a></li>
-                        <li><a href="#">ЦЕНЫ</a></li>
-                        <li><a href="#">КОНТАКТЫ</a></li>
+                        <li><a href="#main">ГЛАВНАЯ</a></li>
+                        <li><a href="#serv">УСЛУГИ</a></li>
+                        <li><a href="#prices">ЦЕНЫ</a></li>
+                        <li><a href="#contacts">КОНТАКТЫ</a></li>
                     </ul>
                 </nav>
 
@@ -130,7 +130,7 @@
 
         </header>
 
-        <div class="content">
+        <div  class="content">
 
             <div class="replies">
                 <h2>ОТЗЫВЫ</h2>
@@ -198,11 +198,9 @@
                                     <div class="">Безопасно!</div>
                                 </div>
                                 <div class="banner_text_item">
-                                    Использование профессиональных  
-                                    препаратов концерна BASF с 
-                                    сертификацией 
-                                    для стран евросоюза 
-                                    безопасно для питомцев
+                                    Новый Европейский стандарт EN16636.
+                                    Работаем с технологией концерна BASF + профессиональное оборудование.
+                                    Безопасно для питомцев
                                     и растений. 
                                     Животные и дети не страдают!
                                 </div>
@@ -240,7 +238,8 @@
                             </div>
                         </div>
                 <div class="content_info">
-                    <article>    
+                    <article> 
+                        <h2>Уничтожение всех видов вредителей(от таракана до грызуна)</h2>   
                         <p> Наша служба по уничтожению тараканов работает на 
                         территории г. Днепр и Днепропетровской области, а 
                         также в г. Гданськ (Польша) уже более 10 лет.</p>
@@ -275,7 +274,7 @@
          
         </div>
 
-        <div class="services"> <h1>УСЛУГИ ПО УНИЧТОЖЕНИЮ</h1></div>
+        <div id="serv" class="services"> <h1>УСЛУГИ ПО УНИЧТОЖЕНИЮ</h1></div>
 
         <div class="services_grid">
             <div class="services_item">
@@ -309,7 +308,7 @@
                 <h1>ЦЕНЫ</h1>
             </div>
 
-            <div class="prices_info">
+            <div id="prices" class="prices_info">
                 <h2>Квартиры</h2>
 
                 <ul>
@@ -327,7 +326,7 @@
             </div>    
         </div>
 
-        <div class="contacts_body">
+        <div id="contacts" class="contacts_body">
             <div class="contacts_title"><h1>КОНТАКТЫ</h1></div>
             <p>Связаться с нами вы можете любым удобным способом</p>
             <div class="contacts">
@@ -364,7 +363,9 @@
             
             </div>
             <div class="recall_bottom">
+                
                 <form action="">
+                    <span>Заказать обратный звонок</span>
                     <input type="text" placeholder="Введите свой номер">
                     <button>ОТПРАВИТЬ</button>
                 </form>

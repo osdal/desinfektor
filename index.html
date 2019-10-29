@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151019886-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-151019886-1');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -64,10 +74,6 @@
                     }
                   
             </script>
-                  
-                  
-                    
-
 
     <div class="container">
         <header>
@@ -148,34 +154,34 @@
                 <div class="replies_item">
                     
                         <div class="avatar">
-                            <img src="img/fb_logo/prjepurko.jpg" alt="">
+                            <img src="https://scontent.fdnk2-1.fna.fbcdn.net/v/t1.0-9/65362854_10213948797744656_1892599921920442368_n.jpg?_nc_cat=107&_nc_oc=AQnSo74Z-BpEEk2gZIwfqv_SDoTNrllU7Skq5HkYhZkpI6jrJss92ldEdEHi2GgHSPk&_nc_ht=scontent.fdnk2-1.fna&oh=ffc5d2a29821b191bcb8acee386f01a4&oe=5E57DBEC" alt="">
                         </div>
                         
                         <div class="replies_info">
-                            <div class="replies_name"><a href="https://www.facebook.com/yuri.przhepjurko" target="blank">Юрий Пржепюрко</a></div>
-                            <div class="replies_text">Отличный сервис. Всем рекомендую</div>
+                            <div class="replies_name"><a href="https://www.facebook.com/igor.synyakov" target="blank">Игорь Синяков</a></div>
+                            <div class="replies_text">После вашей работы в нашей синагоге наконец-то исчезли тараканы</div>
                         </div>
                 </div>
                 <div class="replies_item">
                     
                         <div class="avatar">
-                            <img src="img/fb_logo/prjepurko.jpg" alt="">
+                            <img src="https://scontent.fdnk2-1.fna.fbcdn.net/v/t1.0-9/1909594_139808053058321_738146163243413317_n.jpg?_nc_cat=110&_nc_oc=AQkten5zWjB9rPtHNJ7oBHzmydL4EzWkP75h4QQ4m_FDNEIA3btKCbluP72P7FBwQGg&_nc_ht=scontent.fdnk2-1.fna&oh=76c51e66000170dd4afdddf8f4982e74&oe=5E1A5C3B" alt="">
                         </div>
                         
                         <div class="replies_info">
-                            <div class="replies_name"><a href="https://www.facebook.com/yuri.przhepjurko" target="blank">Юрий Пржепюрко</a></div>
-                            <div class="replies_text">Отличный сервис. Всем рекомендую</div>
+                            <div class="replies_name"><a href="https://www.facebook.com/ViktoriaSoloduhina" target="blank">Вікторія Солодухіна</a></div>
+                            <div class="replies_text">Великолепно. Ребята вы молодцы.</div>
                         </div>
                 </div>
                 <div class="replies_item">
                     
                         <div class="avatar">
-                            <img src="img/fb_logo/prjepurko.jpg" alt="">
+                            <img src="https://scontent.fdnk2-1.fna.fbcdn.net/v/t1.0-1/c0.0.612.612a/74800708_3106595726077455_7598545029279252480_n.jpg?_nc_cat=109&_nc_oc=AQkFHvK91CA8mS0EBFL2xO3S3zd2OGp6UnEsVxNGQfdp-Gm0OmBREmRvpQG14vHKyJc&_nc_ht=scontent.fdnk2-1.fna&oh=80164f4d806b5fd239472728c6878e1b&oe=5E5DF2C7" alt="">
                         </div>
                         
                         <div class="replies_info">
-                            <div class="replies_name"><a href="https://www.facebook.com/yuri.przhepjurko" target="blank">Юрий Пржепюрко</a></div>
-                            <div class="replies_text">Отличный сервис. Всем рекомендую</div>
+                            <div class="replies_name"><a href="https://www.facebook.com/morkvych" target="blank">Lina Morkvych</a></div>
+                            <div class="replies_text">Щиро дякую! Ви допомагаєте хдопям з АТО</div>
                         </div>
                 </div>
 
@@ -257,8 +263,8 @@
             <div class="rightColumn">
                 <div class="recall">
                     <h2>Заказать обратный звонок</h2>
-                    <form action="/page.php" method="get" class="">
-                        <input type="text" name="fname" placeholder="Введите номер телефона">
+                    <form id="replyTop" action="#" method="get" class="">
+                        <input id="recallTop" type="text" name="telephone" placeholder="Введите номер телефона" >
                         <div class="form-submit-button-wrap"> 
                             <button class="form-submit-button" id="button-form-1" type="submit" >Отправить</button>
                         </div>
@@ -364,9 +370,9 @@
             </div>
             <div class="recall_bottom">
                 
-                <form action="">
+                <form action="#" id="bottomForm">
                     <span>Заказать обратный звонок</span>
-                    <input type="text" placeholder="Введите свой номер">
+                    <input type="text" placeholder="Введите свой номер" id="bottom_input" name="phoneNumber">
                     <button>ОТПРАВИТЬ</button>
                 </form>
             </div>
